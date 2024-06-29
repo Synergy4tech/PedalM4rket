@@ -1,31 +1,84 @@
-# React + TypeScript + Vite
+# PedalM4rket
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
+PedalM4rket é um site de anúncios de bicicletas, desenvolvido para facilitar a compra e venda de bicicletas usadas e novas. O projeto foi construído utilizando Vite, React e TypeScript para garantir uma experiência de desenvolvimento rápida e eficiente, além de proporcionar uma aplicação performática e escalável.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite**: Ferramenta de construção rápida e leve.
+- **React**: Biblioteca para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Cadastro de usuários
+- Login e autenticação de usuários
+- Publicação de anúncios de bicicletas
+- Pesquisa e filtragem de anúncios
+- Visualização de detalhes dos anúncios
+- Contato direto com o vendedor
 
-- Configure the top-level `parserOptions` property like this:
+## Pré-requisitos
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Node.js v14 ou superior
+- npm ou yarn
+
+## Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/Synergy4tech/PedalM4rket.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd pedalm4rket
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+   ou
+
+   ```bash
+   yarn install
+   ```
+
+## Execução
+
+Para iniciar o servidor de desenvolvimento, execute:
+
+```bash
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-"# PedalM4rket" 
+ou
+
+```bash
+yarn dev
+```
+
+A aplicação estará disponível em `http://localhost:3000`.
+
+## Build
+
+Para criar uma versão otimizada para produção, execute:
+
+```bash
+npm run build
+```
+
+ou
+
+```bash
+yarn build
+```
+
+Os arquivos otimizados serão gerados no diretório `dist`.
+
+---
