@@ -1,0 +1,11 @@
+:root{
+    --bg-color: #FFFF;
+    --primary-color: #5784B2; // azul fraco
+    --secondary-color: #4A51B0; // azul forte
+}
+
+h1{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
