@@ -1,0 +1,27 @@
+
+.footer {
+    background-color: #DDDDDD;
+    
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+.box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.item1, .item2 {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}

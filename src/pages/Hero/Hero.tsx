@@ -1,3 +1,5 @@
+import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header/Header';
 import './Hero.css';
 
 const Hero = () => {
@@ -5,7 +7,12 @@ const Hero = () => {
 
     return (
       <>
-       <h1>ola</h1>
+      
+      
+        <Header/>
+        <Footer/>
+          
+      
       </>
     )
   }
