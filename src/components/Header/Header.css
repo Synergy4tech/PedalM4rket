@@ -23,23 +23,23 @@
     padding: 0 15px; /* espaço nas laterais */
 }
 
-figure {
+.header figure {
     position: absolute;
     top: 20px; /* Ajuste conforme necessário */
     z-index: 2; /* Garante que o logo fique acima de smallOne */
 }
 
-span {
+.header span {
     display: flex;
     align-items: center;
     padding: 3px 8px 3px 8px;
 }
 
-span img {
+.header span img {
     padding-right: 3px;
 }
 
-a {
+.header a {
     text-decoration: none;
 }
 
@@ -50,7 +50,7 @@ a {
     padding: 8px;
 }
 
-nav {
+.header nav {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -58,16 +58,16 @@ nav {
     padding: 8px;
 }
 
-nav ul {
+.header nav ul {
     display: flex;
     list-style: none;
 }
 
-li {
+.header li {
     padding: 0px 8px;
 }
 
-li a {
+.header li a {
     color: #4A51B0;
 }
 
@@ -76,7 +76,7 @@ li a {
     font-weight: bold;
 }
 
-button {
+.header button {
     background-color: #4A51B0;
     color: #FFFF;
     padding: 10px;
