@@ -1,0 +1,12 @@
+.adverts_space{
+    margin: 30px 0;
+    background-color: #5784B2;
+    padding: 10px;
+}
+
+.adverts_space h1{
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}

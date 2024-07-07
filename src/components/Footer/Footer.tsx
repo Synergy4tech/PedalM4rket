@@ -15,7 +15,7 @@ const Footer = () => {
       
       <div className="footer">
         <div className="supa">
-        <div className="box">
+        <div className="Footer-box">
             <div className="container_grid">
                 <div className="item1">
                     <img src={Logo} alt=""  className='item1_logo'/>

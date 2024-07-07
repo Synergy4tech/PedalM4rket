@@ -1,9 +1,14 @@
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
-import Map from "../../assets/map.svg";
-import Busca from "../../assets/seta.svg";
-import ImgGG from "../../assets/bike.png";
+import MapDark from "../../assets/mapDark.svg";
+import filtro from "../../assets/filtro.svg";
+import Seta2 from "../../assets/seta2.svg";
+import CarIcon from "../../assets/carIcon.svg";
+import BikeIcon from "../../assets/bikeIcon.svg";
+import PedalIcon from "../../assets/PedalIcon.svg";
 import './Hero.css';
+import RetangleAdvertise from '../../components/RetangleAdvertise/RetangleAdvertise';
+import ResalesBox from '../../components/ResalesBox/ResalesBox';
 
 const Hero = () => {
   
@@ -12,117 +17,78 @@ const Hero = () => {
       <>
         <Header />
         <div className="search-container">
+          
+          <div className="hero-box">
           <div className="vehicle-form-container">
             <form className="vehicle-form">
-              {" "}
-              Encontre seu veículo:
-              <div className="form-field">
-                <select name="type" defaultValue="">
-                  <option value="" disabled hidden>
-                    Selecione o tipo
-                  </option>
-                  <option value="tipo1">Tipo 1</option>
-                  <option value="tipo2">Tipo 2</option>
-                  <option value="tipo3">Tipo 3</option>
-                  <option value="tipo4">Tipo 4</option>
-                  <option value="tipo5">Tipo 5</option>
-                </select>
-              </div>
-              <div className="form-field">
-                <select name="vehicle" defaultValue="">
-                  <option value="" disabled hidden>
-                    Selecione o veículo
-                  </option>
-                  <option value="veiculo1">Veículo 1</option>
-                  <option value="veiculo2">Veículo 2</option>
-                  <option value="veiculo3">Veículo 3</option>
-                  <option value="veiculo4">Veículo 4</option>
-                  <option value="veiculo5">Veículo 5</option>
-                </select>
-              </div>
-              <div className="form-field">
-                <select name="averageValue" defaultValue="">
-                  <option value="" disabled hidden>
-                    Selecione o valor médio
-                  </option>
-                  <option value="valor1">Valor 1</option>
-                  <option value="valor2">Valor 2</option>
-                  <option value="valor3">Valor 3</option>
-                  <option value="valor4">Valor 4</option>
-                  <option value="valor5">Valor 5</option>
-                </select>
-              </div>
-              <div className="form-field">
-                <select name="motorization" defaultValue="">
-                  <option value="" disabled hidden>
-                    Selecione a motorização
-                  </option>
-                  <option value="motor1">Motor 1</option>
-                  <option value="motor2">Motor 2</option>
-                  <option value="motor3">Motor 3</option>
-                  <option value="motor4">Motor 4</option>
-                  <option value="motor5">Motor 5</option>
-                </select>
-              </div>
-              <div className="form-field">
-                <select name="year" defaultValue="">
-                  <option value="" disabled hidden>
-                    Selecione o ano
-                  </option>
-                  <option value="ano1">Ano 1</option>
-                  <option value="ano2">Ano 2</option>
-                  <option value="ano3">Ano 3</option>
-                  <option value="ano4">Ano 4</option>
-                  <option value="ano5">Ano 5</option>
-                </select>
-              </div>
-              <div className="form-field">
-                <select name="city" defaultValue="">
-                  <option value="" disabled hidden>
-                    Selecione a cidade
-                  </option>
-                  <option value="cidade1">Cidade 1</option>
-                  <option value="cidade2">Cidade 2</option>
-                  <option value="cidade3">Cidade 3</option>
-                  <option value="cidade4">Cidade 4</option>
-                  <option value="cidade5">Cidade 5</option>
-                </select>
-              </div>
+
+              <p>Encontre seu veÍculo</p>
+              <input type="text" id="tipo" name="tipo" placeholder="Tipo" />
+              <input type="text" id="veiculo" name="veiculo" placeholder="Veiculo" />
+              <input type="text" id="valoMedio" name="valoMedio" placeholder="Valor Medio" />
+              <input type="text" id="moto" name="motorização" placeholder="Motorização" /> 
+              <input type="text" id="ano" name="ano" placeholder="Ano" /> 
+              <input type="text" id="cidade" name="cidade" placeholder="Cidade" /> 
+              
+        
               <button type="submit">ENCONTRAR</button>
-            </form>
-            <div className="advanced-options">
+              <div className="advanced-options">
               <span>
-                <img src={Busca} alt="" />
+                <img src={filtro} alt="" />
                 <a href="#advanced-search"> Busca avançada</a>
               </span>
               <span>
-                <img src={Map} alt="" />
+                <img src={MapDark} alt="" />
                 <a href="#dealer-search"> Revendas por cidade</a>
               </span>
             </div>
+            </form>
+            
           </div>
-          <div className="img_container">
-            <img src={ImgGG} alt="" className="img_car" />
-            <div className="img_text">
+        </div>
+          <div className="leftSide">
+            
+            <div className="left-text">
               <h1>RODAS & MOTORES</h1>
               <p>
-                Transformando trajetos em jornadas. Bicicletas e carros para
+                Transformando trajetos em jornadas. Bicicletas e <br /> carros para
                 cada caminho.
               </p>
             </div>
-            <div className="img_button">
+            <div className="left-button">
               <button>
-                <img src={Map} /> VENDER VEICULO
+                <img src={PedalIcon} /> VENDER VEICULO
               </button>
               <button>
-                <img src={Map} /> REVENDAS
+                <img src={BikeIcon} /> REVENDAS
               </button>
               <button>
-                <img src={Map} /> AUTOMOVEIS
+                <img src={CarIcon} /> AUTOMOVEIS
               </button>
+          
             </div>
           </div>
         </div>
+
+
+
+        <div className="advertise-container">
+          <div className="advertise-box">
+          <RetangleAdvertise/>
+          <span>
+            <img src={Seta2} alt="" />
+            <p>Revendas</p>
+          </span>
+          <ResalesBox/>
+          <RetangleAdvertise/>
+          <span>
+            <img src={Seta2} alt="" />
+            <p>Veículos em destaque</p>
+          </span>
+          <RetangleAdvertise/>
+          </div>
+
+          </div>
         <Footer />
       </>
     );

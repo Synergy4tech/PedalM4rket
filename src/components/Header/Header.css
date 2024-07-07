@@ -3,7 +3,7 @@
 }
 
 .header {
-    background-color: #ffffff; /* ou qualquer cor de fundo que você preferir */
+    background-color: #ffffff; 
 }
 
 .container_header {
@@ -13,20 +13,20 @@
 .smallOne {
     background-color: #cccccc;
     font-size: 14px;
-    z-index: 1; /* Garante que o conteúdo de smallOne fique acima de outros elementos */
+    z-index: 1; 
     position: relative;
 }
 
 .box {
-    max-width: 1200px; /* ajuste conforme necessário */
+    max-width: 1200px; 
     margin: 0 auto;
-    padding: 0 15px; /* espaço nas laterais */
+    padding: 0 15px; 
 }
 
 .header figure {
     position: absolute;
-    top: 20px; /* Ajuste conforme necessário */
-    z-index: 2; /* Garante que o logo fique acima de smallOne */
+    top: 20px; 
+    z-index: 2; 
 }
 
 .header span {
