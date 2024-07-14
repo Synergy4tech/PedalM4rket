@@ -6,9 +6,13 @@ import Seta2 from "../../assets/seta2.svg";
 import CarIcon from "../../assets/carIcon.svg";
 import BikeIcon from "../../assets/bikeIcon.svg";
 import PedalIcon from "../../assets/PedalIcon.svg";
+import Lupa from "../../assets/lupa.svg";
+import Auto from "../../assets/autofalante.svg";
 import './Hero.css';
 import RetangleAdvertise from '../../components/RetangleAdvertise/RetangleAdvertise';
 import ResalesBox from '../../components/ResalesBox/ResalesBox';
+import AdvertiseBox from '../../components/AdvertiseBox/AdvertiseBox';
+import Carrosel from '../../components/Carrosel/Carrosel';
 
 const Hero = () => {
   
@@ -17,8 +21,7 @@ const Hero = () => {
       <>
         <Header />
         <div className="search-container">
-          
-          <div className="hero-box">
+          <div className="hero-container">
           <div className="vehicle-form-container">
             <form className="vehicle-form">
 
@@ -44,10 +47,9 @@ const Hero = () => {
             </div>
             </form>
             
-          </div>
+          
         </div>
           <div className="leftSide">
-            
             <div className="left-text">
               <h1>RODAS & MOTORES</h1>
               <p>
@@ -65,9 +67,10 @@ const Hero = () => {
               <button>
                 <img src={CarIcon} /> AUTOMOVEIS
               </button>
-          
             </div>
           </div>
+
+        </div>
         </div>
 
 
@@ -85,10 +88,30 @@ const Hero = () => {
             <img src={Seta2} alt="" />
             <p>Veículos em destaque</p>
           </span>
+          <Carrosel/>
           <RetangleAdvertise/>
           </div>
 
           </div>
+
+          <div className="section-automobiles">
+            <div className="automobiles-box">
+              <h1>AUTOMOVEIS</h1>
+              <p>Anuncie ou encontre aqui seu automovel</p>
+              <div className="automobiles-inputs-box">
+              <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar automoveis" />
+              <input type="text" id="tipo" name="tipo" placeholder="Tipo" />
+              <input type="text" id="cidade" name="cidade" placeholder="Cidade" /> 
+              <input type="text" id="local" name="local" placeholder="Local" /> 
+              <button><img src={Lupa} alt="" /></button>
+              </div>
+              <span><img src={Auto} alt="" /><a href="">Anuncie aqui seu automovel</a></span>
+            </div>
+            
+          </div>
+
+         <AdvertiseBox/>
+
         <Footer />
       </>
     );

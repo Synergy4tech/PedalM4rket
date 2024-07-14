@@ -14,11 +14,11 @@ const Header = () => {
                         <div className="box">
                             <div className="content">
                                 <p className='alarmText'>O Rodas & Motores não solicita códigos pelo celular.</p>
-                                <span>
+                                <span className='i1'>
                                     <img src={CellIcon} alt="" />
                                     <a href="http://" target="_blank" rel="noopener noreferrer">(00)00000-0000</a>
                                 </span>
-                                <span>
+                                <span className='i1'>
                                     <img src={CellIcon} alt="" />
                                     <a href="http://" target="_blank" rel="noopener noreferrer">(00)00000-0000</a>
                                 </span>
@@ -38,7 +38,7 @@ const Header = () => {
                     <div className="bigOne">
                         <div className="box">
                             <figure><img src={Logo} alt="" /></figure>
-                            <nav>
+                            <nav className='sidebar'>
                                 <ul>
                                     <li><a href="">BUSCA AVANÇADA</a></li>
                                     <li><a href="">REVENDA</a></li>

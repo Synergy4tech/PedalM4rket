@@ -1,15 +1,39 @@
-
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 180px);
-    grid-template-rows: repeat(5, 100px);
+    grid-template-rows: auto;
     gap: 2px;
+    justify-content: center;
 }
 
 .grid-container .box {
     background-color: #cccccc;
-  
     width: 170px;
     height: 80px;
+}
+
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 180px);
+    }
+}
+
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 180px);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 180px);
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 180px);
+    }
+
+   
 }

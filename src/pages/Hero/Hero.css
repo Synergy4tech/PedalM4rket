@@ -1,42 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*===========================Base estrutura=================================*/
 
 .search-container {
+  position: relative; 
+  background-image: url("../../assets/bike.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
   display: flex;
-  background-color: #5784B2;
+  justify-content: center; 
+  align-items: center; 
 }
 
-.hero-box{
-  width: 50%;
+.search-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+.hero-container {
+  display: flex;
+  max-width: 1200px; 
+  padding: 0 15px; 
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative; 
+  z-index: 2;
 }
 
 /*===========================Right side =================================*/
 
 .vehicle-form-container {
   padding: 20px 0;
-
-  
+  width: 30%;
 }
 
 .vehicle-form {
-  width: 80%;
-  margin: 0 auto;
-  padding: 0 15px; 
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-weight: bold;
   color: white;
-  
 }
+
 .vehicle-form p {
   font-weight: lighter;
-  color: #020747;
+  color: #fff;
 }
 
 .vehicle-form input {
@@ -46,9 +67,6 @@
   border-radius: 5px;
 }
 
-
-
-
 .vehicle-form button {
   padding: 10px;
   border: 1px solid white;
@@ -56,7 +74,6 @@
   background-color: #4A51B0;
   color: white;
   cursor: pointer;
-  
 }
 
 .vehicle-form button:hover {
@@ -71,68 +88,38 @@
 }
 
 .advanced-options a {
-  color: #020747;
+  color: #fff;
   text-decoration: none;
   font-weight: lighter;
 }
-
 
 .advanced-options a:hover {
   text-decoration: underline;
 }
 
-
 /*===========================left side=================================*/
 
 
-
-.leftSide{
-
-  position: relative;
-  background-image: url("../../assets/bike.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 10px;
-}
-
-.leftSide::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: -1; 
-}
-
-.left-text{
+.left-text {
   color: white;
-  
 }
 
-.left-text h1{
+.left-text h1 {
   font-size: 60px;
   margin-bottom: 5px;
 }
 
-.left-text p{
+.left-text p {
   font-size: 25px;
   font-weight: lighter;
-  
 }
 
-.left-button{
+.left-button {
   margin-top: 100px;
   display: flex;
 }
 
-.left-button button{
+.left-button button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,12 +134,11 @@
   opacity: 0.9;
 }
 
-.left-button button img{
- margin-right: 10px;
- width: 44px;
+.left-button button img {
+  margin-right: 10px;
+  width: 44px;
   height: 44px;
 }
-
 
 
 
@@ -179,4 +165,161 @@
 
 .advertise-box span img{
   padding-right: 10px;
+}
+
+
+.section-automobiles{
+  position: relative;
+  background-image: url("../../assets/car.png");
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+.section-automobiles::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+.automobiles-box{
+  color: white;
+  position: relative;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 15px; 
+  z-index: 2;
+  display: flex;
+  flex-direction: column; 
+}
+
+.automobiles-box h1{
+  font-size: 40px;
+  margin: 20px 0 10px 0;
+}
+
+.automobiles-box p{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.automobiles-inputs-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+} 
+
+.automobiles-inputs-box input{
+  padding: 10px;
+  width: 23%;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.automobiles-inputs-box button{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #4A51B0;
+  color: white;
+  cursor: pointer;
+}
+
+.automobiles-inputs-box button:hover{
+  background-color: #0056b3;
+}
+
+.automobiles-box span{
+ margin-bottom: 10px;
+}
+
+.automobiles-box span img{
+  margin-right: 10px;
+}
+
+.automobiles-box a{
+  color: white;
+  text-decoration: none;
+}
+
+
+/*===========responsividade==============*/
+
+@media (max-width: 1150px) {
+  .hero-container{
+  flex-direction: column;
+  
+  
+  justify-content: space-between;
+  align-items: center;
+  position: relative; 
+  
+  }
+  .leftSide h1{
+    font-size: 50px;
+  }
+  .leftSide p{
+    font-size: 20px;
+  }
+
+  .left-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .left-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 740px) {
+  .left-button{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .vehicle-form-container{
+    width: 100%;
+  }
+
+  .automobiles-box h1 {
+    font-size: 30px;
+  }
+
+  .automobiles-box p {
+    font-size: 20px;
+  }
+
+  .automobiles-inputs-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .automobiles-inputs-box input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .automobiles-inputs-box button {
+    width: 100%;
+    padding: 10px;
+  }
 }

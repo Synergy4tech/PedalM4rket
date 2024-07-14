@@ -1,0 +1,82 @@
+.box-advertise-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.box-advertise {
+  border: 2px solid #ccc;
+  background-color: #fff;
+  width: 100%; 
+  max-width: 250px; 
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.space {
+  background-color: #5784b2;
+  height: 150px;
+}
+
+.box-advertise span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-advertise span p {
+  color: #4A51B0;
+  margin: 5px;
+}
+
+.box-advertise button {
+  background-color: #4a51b0;
+  color: white;
+  border: none;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.box-advertise button:hover {
+  background-color: #0056b3;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.show-more-btn {
+  background-color: #4a51b0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .box-advertise-container {
+    gap: 10px; 
+    justify-content: center; 
+  }
+  
+  .box-advertise {
+    width: calc(50% - 10px); 
+    max-width: none; 
+  }
+}
+
+@media (max-width: 480px) {
+  .box-advertise {
+    width: 100%; 
+  }
+}

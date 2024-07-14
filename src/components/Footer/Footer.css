@@ -105,3 +105,9 @@
     font-weight: lighter;
 }
 
+@media (max-width: 640px) {
+    .container_grid{
+        grid-template-columns: 1fr;
+    }
+
+}

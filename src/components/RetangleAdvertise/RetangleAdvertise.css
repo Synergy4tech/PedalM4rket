@@ -10,3 +10,9 @@
     font-weight: bold;
     text-align: center;
 }
+
+@media (max-width: 768px){
+    .adverts_space h1{
+        font-size: 50px;
+    }
+}
